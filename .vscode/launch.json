@@ -1,0 +1,26 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Python: arquivo atual",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${file}",
+      "cwd": "${workspaceFolder}",
+      "python": "${workspaceFolder}\\.venv\\Scripts\\python.exe",
+      "console": "integratedTerminal",
+      "justMyCode": true
+    },
+    {
+      "name": "BDD: 12 registros",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "behave",
+      "args": ["features/web_tables_12_records.feature", "--no-capture"],
+      "cwd": "${workspaceFolder}",
+      "python": "${workspaceFolder}\\.venv\\Scripts\\python.exe",
+      "console": "integratedTerminal",
+      "justMyCode": true
+    }
+  ]
+}
